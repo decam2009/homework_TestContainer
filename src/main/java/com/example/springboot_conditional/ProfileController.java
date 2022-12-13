@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ProfileController {
-    private SystemProfile profile;
+    private final SystemProfile profile;
 
     public ProfileController(SystemProfile profile) {
         this.profile = profile;
